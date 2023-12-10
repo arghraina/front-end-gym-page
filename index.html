@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALM FITNESS</title>
+    <link rel="stylesheet" href="19.) Project 1- CSS style sheet.css">
+    <style>
+        body {
+            background: url('PROJECT 1 GYM/gym.webp') ;
+            /* background is used to add image . Inside URL, we have to write the path,
+                                                           Here, path is PROJECT 1 GYM/webp.    */
+            background-repeat: no-repeat;
+            height: 1000px;
+            
+        }
+
+        .left {
+            color: white;
+            font-family: cursive;
+            font-weight: bold;
+            display: inline-block;
+            /* To make inline as well as block to the boxes. */
+            position: absolute;
+            left: 30px;
+            top: 40px;
+        }
+
+        .left img {
+            /* To add CSS to added image in body. */
+            width: 115px;
+            height: 60px;
+
+        }
+
+        .mid {
+            display: block;
+            /* To make inline as well as block to the boxes. */
+            margin: 65px auto;
+            width: 60%;
+        }
+
+        .right {
+            position: absolute;
+            right: 30px;
+            top: 40px;
+            display: inline-block;
+            /* To make inline as well as block to the boxes. */
+        }
+
+        .navbar {
+
+            font-weight: bolder;
+            padding-right: 0px;
+        }
+
+        li {
+            text-align: center;
+            margin: 2%;
+            text-decoration: underline;
+            color: rgb(255, 255, 255);
+
+            display: inline-block;
+            box-sizing: border-box;
+            width: 15%;
+
+        }
+
+        .longli {
+            width: 30%;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        a:hover {
+            color: rgb(103, 26, 154);
+            cursor: pointer;
+
+        }
+
+        .btn {
+            background-color: rgb(23, 22, 22);
+            color: white;
+            margin-top: 0px;
+            margin-right: 39px;
+            padding: 0px 10px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .container {
+            width: 50%;
+            margin-top: 33%;
+            margin-left: 64%;
+        }
+
+        h4 {
+            height: 20px;
+            width: 60%;
+            border-radius: 10px;
+            text-align: center;
+            background-color: rgb(248, 0, 0);
+            color: rgb(255, 255, 0);
+        }
+
+        .inp {
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            height: 25px;
+            width: 340px;
+            display: block;
+            margin-left: 10px;
+        }
+        .btn1{
+            background-color: rgb(23, 22, 22);
+            color: white;
+            margin-left: 125px;
+            width: 80px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <heading class="heading">
+        <div class="left"> <!-- Left Box for logo -->
+            <img src="PROJECT 1 GYM/gym logo.jpg">
+            <div>ALM FITNESS</div>
+        </div>
+        <div class="mid"> <!-- Mid Box for navigation box -->
+            <ul class="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li class="longli"><a href="">Yoga and Exercises</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right"> <!-- Right Box for buttons -->
+            <button class="btn">Call us on: 9541565383</button>
+            <button class="btn">Email us on: arghrainaiitr@gmail.com</button>
+        </div>
+    </heading>
+    <div class="container">
+        <h4>Join the best gym in Jammu now.</h4>
+        <form action="backend.php">
+            <input class="inp" type="text" placeholder="enter your name">
+            <input class="inp" type="number" placeholder="age">
+            <input class="inp" type="text" placeholder="gender">
+            <input class="inp" type="number" placeholder="Phone Number">
+            <input class="inp" type="email" placeholder="Email ID">
+            <input class="inp" type="text" placeholder="enter address">
+            <button class="btn1">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
